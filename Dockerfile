@@ -24,5 +24,8 @@ RUN pip install --upgrade pip
 # Install the dependencies from the requirements.txt file
 RUN pip install --no-cache-dir -r requirements.txt
 
+RUN pip install Flask
+
+EXPOSE 8000
 # Set the default command to run your application
 CMD ["python3", "main.py"]
